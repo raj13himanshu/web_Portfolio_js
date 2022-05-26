@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- header section start  -->
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+   <!-- css for works page -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+   <!-- css for works page -->
+
+    <!-- =====BOX ICONS===== -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- IMPORT SMTP PROTOCOL FOR SEND CONTACT DETAILS  -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+
+
+
+    <title> Portfolio website HRS </title>
+
+
+</head>
+<!-- header section end -->
+
+
+
+<!-- <body background="G:/skills/background/pic27.jpg"> -->
+
+
+<!-- body section start -->
+
+<body>
+<!-- <body background="G:/portfolio/background/pic27.jpg"> -->
+
+
+
+    <!--===== HEADER =====-->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo"> HRS</a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                    <li class="nav__item"><a href="#portfolio" class="nav__link">portfolio</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">work</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <main class="l-main">
+        <!--===== HOME =====-->
+        <section class="home section" id="home">
+
+            <div class="img">
+                <br>
+                <img src="assets/img/home.jpg" class="shadow-dark" style=" border-radius:50%; width:300px; height:300px; border: 8px solid #ffffff; margin-left:auto; margin-right:auto; display: block;" alt="">
+                <br> <br>
+                <div class="home__data">
+                    <div class="glow">
+                        <h1 style="font-size:1.5em;"> Hey, I'm Himanshu Raj </h1>
+                        <br>
+                        <hr style="width: 30%; text-align: center; margin-left: auto; margin-right: auto;">
+                        <h2 style="color: white; font-size:1.5em;">a Web Designer - Graphic Artist - Illustrator </h2>
+                    </div>
+                </div>
+
+            </div>
+            </div>
+
+
+        </section>
+
+
+
+
+
+
+        <!--===== portfolio =====-->
+        <section class="portfolio section" id="portfolio">
+            <h2 class="section-title">Portfolio</h2>
+
+            <div class="portfolio__container bd-grid">
+                <div class="portfolio__img">
+                    <img src="assets/img/work1.png" alt="">
+                </div>
+                <div class="portfolio__img">
+                    <img src="assets/img/work2.png" alt="">
+                </div>
+                <div class="portfolio__img">
+                    <img src="assets/img/work3.png" alt="">
+                </div>
+                <div class="portfolio__img">
+                    <img src="assets/img/work4.png" alt="">
+                </div>
+                <div class="portfolio__img">
+                    <img src="assets/img/work5.png" alt="">
+                </div>
+                <div class="portfolio__img">
+                    <img src="assets/img/work6.png" alt="">
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+        <!--===== ABOUT =====-->
+        <section class="about section " id="about">
+            <h2 class="section-title">About Me</h2>
+
+            <div class="about__container bd-grid">
+                <div class="about__img">
+                    <img src="assets/img/hrs2.jpeg" class="shadow-dark" style=" border-radius:50%; width:300px; height:350px; border: 4px solid #ffffff; display: block;" alt="">
+                </div>
+
+                <div>
+                    <h2 class="about__subtitle"><ul>something about me</ul> </h2>
+                    <p class="about__text">Hey, This is Himanshu Raj. I'm interested in web designing and web developement. I belongs to Computer Science background and completed B.tech under CSE from Greater Noida. I'm a fresher and looking for a job in s/w developement field.
+                        I've learned core java, jdbc, Servlets, Html, Css, javascript, nodejs, php and Mysql. I've earned a java certification from jspider training institute of Bangalore and javascript project certification from freeCodeCamp and also
+                        got some certificates from hackerrank. </p>
+                    <h3>to check more details about me, click below on my</h3> <a href="https://drive.google.com/file/d/1HwSatIrCtWaBbrRirbgK2GZJIIcZMfXR/view?usp=drivesdk" class="about__text"><i class='bx bxs-' ><h2 style="color: pink;">resume</h2></i></a>
+                </div>
+
+            </div>
+        </section>
+
+
+
+          <!--===== WORK =====-->
+        <section class="work section " id="work">
+            <h2 class="section-title">CRUD</h2>
+
+            <div class="work__container bd-grid">
+
+<div class="form" style="margin-left: 400px; width:50%; " >
+    <form action="javascript:void(0);" method="POST" onsubmit="app.Add()"> 
+    <input type="text" id="add-todo" placeholder="Type Here..." style="padding-left: 10px;">
+    <input type="submit" value="Add" class="btn btn-primary">
+    </form>
+    <p style="margin-left: 40px;">You Have: </p>
+    <p style="margin-left: 40px;" id="counter"></p>
+
+    <table style="margin-left: 20px; width:50%; " >
+    <tr class="to-do">
+        <th>
+            <h3 style="margin-left: 15px; text-decoration: underline 1vh rgb(251, 252, 248);">To-Do:</h3></th>
+    </tr>
+        <tbody id="tasks">
+        </tbody>
+    </table>
+</div>
+
+    <div id="edit-box" role="aria-hidden">
+      <form action="javascript:void(0);" method="POST" id="save-edit">
+        <input type="text" id="edit-todo" style="padding-left: 10px;">
+        <input type="submit" value="Save" class="btn btn-success"/> <a onclick="CloseInput()" aria-label="Close">&#10006;</a>
+      </form>
+     </div>
+
+</div>
+
+ 
+</section>
+
+
+
+
+        <!--===== CONTACT =====-->
+        <section class="contact section" id="contact">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="contact__container bd-grid">
+
+                <div id="error_message"></div>
+
+                <form id="myform" onsubmit="validate();">
+
+                    <div class="input_field">
+                        <input type="text" placeholder="Name" id="name">
+                    </div>
+                    <br>
+                    <div class="input_field">
+                        <input type="text" placeholder="Subject" id="subject">
+                    </div>
+                    <br>
+                    <div class="input_field">
+                        <input type="text" placeholder="Phone" id="phone">
+                    </div>
+                    <br>
+                    <div class="input_field">
+                        <input type="text" placeholder="Email" id="email">
+                    </div>
+                    <br>
+                    <div class="input_field">
+                        <textarea placeholder="Message" id="message"></textarea>
+                    </div>
+                    <br>
+                    <div class="btn">
+                        <input type="submit">
+                    </div>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+
+
+
+
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+        <p class="footer__title"><ul>contacts</ul></p>
+        <div class="footer__social">
+            <a href="https://www.facebook.com/himsingh.hr1" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+            <a href="https://www.instagram.com/himsingh_raj/" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+            <a href="https://twitter.com/Himansh02622264" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+            <a href="https://maps.app.goo.gl/Yc52vHW86H6nkrYXA" class="footer__icon"><i class='bx bxs-map' ></i></a>
+            <!--   <a href="" class="footer__icon"><i class='bx bxs-phone' ></i></a>    -->
+            <!--   <a href="" class="footer__icon"><i class='bx bxl-' ></i></a>  -->
+
+            <!--          -->
+            <class="footer__icon"><i class='bx bxs-phone'></i>
+                <button onclick="myFunction()">call</button>
+
+                <p id="demo"></p>
+
+                <script>
+                    function myFunction() {
+                        document.getElementById("demo").outerHTML = "8700597166";
+                    }
+                </script>
+                <!--          -->
+
+
+                <a href="https://mail.google.com/" class="footer__icon"><i class='bx bx-envelope' >himsingh.hr1@gmail.com</i></a>
+
+        </div>
+
+        <p>&#169; 2020 copyright all right reserved</p> <br>
+        <footer style="text-align: center">Created by <a href="https://him-portfolio.herokuapp.com/">Himanshu Raj</a></footer>
+    </footer>
+
+
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--===== MAIN JS =====-->
+    <script src="assets/js/main.js"></script>
+
+    <script src="assets/js/script.js"></script>
+
+
+</body>
+
+</html>
